@@ -1,5 +1,7 @@
-# requirements.txt 
-snowflake-connector-python
+# requirements.txt
 snowflake-snowpark-python
-streamlit==1.44.1
-requests
+streamlit
+
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
